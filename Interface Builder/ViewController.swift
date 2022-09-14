@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var greetLabel: UILabel!
     @IBOutlet weak var greetButton: UIButton!
     @IBOutlet weak var greetingLabel: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func greetButtonTouched(_ sender: Any) {
-        greetingLabel.text = "Hello, " + (nameTextField.text)!
+        greetLabel.text = "Hello, " + (nameTextField.text)!
     }
     
 }
